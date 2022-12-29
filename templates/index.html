@@ -1,0 +1,775 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <script src="https://kit.fontawesome.com/7414e22221.js"></script>
+        <link rel="stylesheet" href="{% static '/style/style.css' %}">
+        <link rel="stylesheet" href="{% static '/style/responsive.css' %}">
+        <link rel="stylesheet" href="{% static '/style/contact.css' %}">
+        <link rel="stylesheet" href="{% static '/style/tarang.css' %}">
+        <link href='https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap' rel="stylesheet">
+        <link rel="shortcut icon" type="x-1con" href="{% static '/dist/logo.png' %}">        
+        <title>Journey To Independence</title>
+    </head>
+    <body onload="clickHome(), myFunction()">
+    <div id="loader"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+    <ul class="sidenav">
+        <li><br><br><br><img class="logoimg" src="{% static '/dist/logo.png' %}" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 90%;"></li>
+        <li><h1 class="neon">Journey Towards Independence</h1></li>
+    </ul>
+    <div class="content">
+      
+        <div class="tab">
+            <button class="tablinks myHome" onclick="openTab(event, 'Home')"><span><i class="fa-solid fa-house"> </i> </span>Home</button>
+            <button class="tablinks" onclick="openTab(event, 'Media')"><span><i class="fa-solid fa-image"> </i> </span>Media</button>
+            <button class="tablinks" onclick="openTab(event, 'Fighters')"><span><i class="fa-solid fa-user"> </i> </span>Fighters</button>
+            <button class="tablinks" onclick="openTab(event, 'Information')"><span><i class="fa-solid fa-circle-info"></i> </span>Facts</button>
+            <button class="tablinks" onclick="openTab(event, 'Contact')"><span><i class="fa-solid fa-phone"></i> </span>Contact</button>
+        </div>
+        <div id="Contact" class="tabcontent">
+          <h2>Review Our Webpage</h2>
+          <section id="contact">
+  
+            <h1 class="section-header">Contact</h1>
+            
+              <form method="get" action="/sent">
+                <div class="form-group row">
+                  <label for="email" class="col-sm-2 col-form-label">Name</label>
+                  <div class="col-sm-10">
+                    <input   style="color: black;" type="text" name="name" class="form-control" id="inputPassword" placeholder="Name">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputPassword" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input   style="color: black;"type="email" name="email" class="form-control" id="inputPassword" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputPassword" class="col-sm-2 col-form-label">Your Message</label>
+                  <div class="col-sm-10">
+                    <textarea  style="-color: black;" name="message" class="form-control" id="exampleFormControlTextarea1" cols="30" rows="10"></textarea>
+                  </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </form>
+              
+            <!-- Left contact page --> 
+              
+                
+            
+          </section>  
+        </div>
+        <div id="Information" class="tabcontent">
+          <h2 class="headings neon">Information About The Struggle</h2>
+          <div class="myflex-container">
+            <div>
+              <p class="">The British landed in India in Surat on August 24, 1608. While India has a rich and recorded history going back 4000 years to the Indus Valley Civilisation in Harappa and Mohenjo-Daro, Britain had no indigenous written language until the 9th century almost 3000 years after India.</p>
+
+            </div>
+            <div>
+              <img class="heartbeat" src="https://i.guim.co.uk/img/media/010a8fabf95a1ffbd053b22e0b57addf07a868a1/0_223_3192_1915/master/3192.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=d7616db58397e75cb4facd3f38aeaddf" style="width:240px; height:250px; border-radius: 5%;">
+            </div>
+          </div><hr>
+          <div class="myflex-container">
+            
+            <div> <img class="heartbeat" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkqBc2zldW99L1ef4bigXLCQH5mGaaZNmgNg&usqp=CAU" style="width:240px; height:250px; border-radius: 5%;"> 
+            </div>
+            <div> <p class="">The British East India Company was formed in 1599 under a charter granted by Queen Elizabeth in 1600. The British Joint Stock Company, as it was known earlier, was founded by John Watts and George White for trade with Asian nations in the south and south-east.</p></div>
+          </div><hr>
+          <div class="myflex-container">
+            <div>
+              <p class="">Quit India Movement Day: Under the leadership of Mahatma Gandhi, people across India came together to uproot British imperialism. In 1942, in a fiery speech in Mumbai, Mahatma Gandhi gave a 'do or die' call to the people of India in a final push to make the British quit.</P>
+            </div>
+            <div>
+              <img class="heartbeat"src="https://cdn.britannica.com/73/200573-050-194DB760/Mahatma-Gandhi-1931.jpg" style="width:240px; height:250px; border-radius: 5%;">
+            </div>
+          </div><hr>
+            <div class="myflex-container">
+              <div>
+                <img class="heartbeat" src="https://th-i.thgim.com/public/news/national/bk4dby/article29567004.ece/alternates/FREE_1200/02THGANDHI11" style="width:240px; height:250px; border-radius: 5%;">
+              </div>
+              <div>
+                <p class="">The Gandhian strategy is the combination of truth, sacrifice, non- violence, selfless service and cooperation. According to Gandhi one should be brave and not a coward. He should present his views, suggestions and thoughts without being violent. One should fight a war with the weapons of truth and non violence.</p>
+              </div>
+            </div><hr>
+            <div class="myflex-container">
+              <div>
+                <p class="">The Dandi March or Salt Satyagraha was an act of nonviolent civil disobedience in colonial India led by Mahatma Gandhi. The Twenty-Four Day March lasted from 12 March 1930 to 6 April 1930 as a direct action campaign of tax resistance and non-violent protest against the British salt monopoly.</p>
+              </div>
+              <div>
+                <img class="heartbeat" src="https://akm-img-a-in.tosshub.com/aajtak/images/photo_gallery/202103/thumbnail_gettyimages-3327971-594x5-sixteen_nine.jpg?size=1200:675" style="width:240px; height:250px; border-radius: 5%;" >
+              </div>
+            </div><hr>
+            <div class="myflex-container">
+              <div>
+                <img class="heartbeat" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201603/dandi-march---itgd-set-647_031216011151.jpg?VersionId=Rki7QkRAGycI8gXSAsnxPsRh5_QXB.SE" style="width:240px; height:250px; border-radius: 5%;">
+
+        
+              </div>
+              <div>
+                <p class="">In January 1931, Gandhi was released from prison. He later met with Lord Irwin, the viceroy of India, and agreed to call off the satyagraha in exchange for an equal negotiating role at a London conference on India's future.</p>
+
+              
+              </div>
+            </div><hr>
+            <div class="myflex-container">
+              <div>
+                <p class="">His non-violent resistance helped end British rule in India and has influenced modern civil disobedience movements across the globe. Widely referred to as Mahatma, meaning great soul or saint in Sanskrit, Gandhi helped India reach independence through a philosophy of non-violent non-cooperation.</p>
+              </div> 
+              <div>
+                <img class="heartbeat" src="data:image/jpeg;base64,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" style="width:240px; height:250px; border-radius: 5%;">
+              </div>
+
+            </div>
+            <hr class="style-two">
+            <footer>
+              <div class="myfootercontainer footerContainer">
+                <div class="footer-nav flex flex-around flex-start flex-g-1">
+                  <div class="col flex flex-column flex-start flex-g-1">
+                    <span class="logo-holder">
+                      <img style="margin: 0; padding: 0;" src="{% static '/dist/gts.jpe' %}" alt="">
+                    </span>
+                    <p class="site-decription">
+                      This Is A Competition Website And It Is Not Against Anyone.
+                    </p>
+                    <div class="social-medias flex flex-g-1">
+                      <a target="_blank" href="https://www.youtube.com/@gurukultheschool2186/featured" class="social-media flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                      </a>
+                      <a target="_blank" href="https://twitter.com/gurukulthescho1" class="social-media flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                      </a>
+                      <a target="_blank" href="https://www.facebook.com/gurukulNH9" class="social-media flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                      </a>
+                      <a target="_blank" href="https://www.gurukultheschool.com/" class="social-media flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5v39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9v39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7v-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1H257c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zm48 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z"/></svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col flex flex-column flex-g-1 flex-start">
+                    <h3 class="col-title">Info</h3>
+                    <nav class="col-list">
+                      <ul style="background-color: white; background-image: none;">
+                        <li><a href="https://www.gurukultheschool.com/">School Web</a></li>
+                        <li><a href="https://www.gurukultheschool.com/admission.php#reading">FAQ</a></li>
+                        <li><a href="https://www.gurukultheschool.com/school.php">School</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="col flex flex-column flex-g-1 flex-start"><h3 class="col-title">Credits</h3>
+                <nav class="col-list">
+                  <ul style="background-color: white; background-image: none;">
+                    <li><a href="{% static '/pics/yash.jpeg' %}">~Yash Varshney VII-C</a></li>
+                    <li><a href="{% static '/pics/tarang.jpeg' %}">~Tarang Katiyar VII-C</a></li>
+                  </ul>
+                </nav></div>
+                  
+                </div>
+                
+                <div class="copyright">© 2022 - All Rights Reserved <br><a style="color: black;" href="./copyright">Click Here for Citations</a></div> 
+              </div>
+            </footer>
+            
+           
+           
+          
+        </div>
+        <div id="Fighters" class="tabcontent">
+       <div class="mytext">
+        <h2 class="headings neon">Independence Of Our Country</h2>
+        <p>Respected People Of Our Country</p> 
+        </div>
+        
+        <center>
+        <div id="flex-container">
+          
+            <div class="orange" id="box">            
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Mahatma_Gandhi"><img src="{% static '/fighters/gandhi.jpeg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+                <p style="margin-bottom: 0 !important;" id="name">Mahatma Gandhi</p>
+                <p style="margin-bottom: 0 !important;"></p>
+            </div>
+            <div class="orange"id="box" >
+           <a target="_blank" href="https://en.wikipedia.org/wiki/Gopal_Krishna_Gokhale"> <img src="{% static '/fighters/gookhale.webp' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+            <p style="margin-bottom: 0 !important;" id="name">Gopal Krishna Gokhale</p>
+            <p style="margin-bottom: 0 !important;"></p>
+            </div>
+            <div class="white"id="box" >
+              <a target="_blank" href="https://en.wikipedia.org/wiki/Sri_Aurobindo"><img src="{% static '/fighters/sri_aurobindo1.jpg.webp' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+              <p style="margin-bottom: 0 !important;" id="name">Sri Aurobindo</p>
+              <p style="margin-bottom: 0 !important;"></p>
+              </div>
+              <div class="green"id="box">
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Subhas_Chandra_Bose"><img src="{% static '/fighters/netaji-Subhas_Bose1.jpg.webp' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+                <p style="margin-bottom: 0 !important;" id="name">Netaji Subhas Chandra Bose </p>
+                <p style="margin-bottom: 0 !important;"></p>
+                </div>
+                <div class="green" id="box">
+                  <a target="_blank"href="https://en.wikipedia.org/wiki/Jawaharlal_Nehru"> <img src="{% static '/fighters/nehru2.jpg.webp' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+                  <p style="margin-bottom: 0 !important;" id="name">Jawaharlal Nehru</p>
+                  <p style="margin-bottom: 0 !important;"> </p>
+                </div>       </div>
+        
+        <div id="flex-container">
+            <div class="orange"id="box">            
+              <a target="_blank"href="https://en.wikipedia.org/wiki/Dr._B_R_Ambedkar"><img src="{% static '/fighters/br.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+                <p style="margin-bottom: 0 !important;" id="name">Dr. B R Ambedkar</p>
+                <p style="margin-bottom: 0 !important;"></p>
+            </div>
+            <div class="orange"id="box">
+              <a target="_blank"href="https://en.wikipedia.org/wiki/Rajendra_Prasad"><img src="{% static '/fighters/rajendra.jpeg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+            <p style="margin-bottom: 0 !important;" id="name">Dr. Rajendra Prasad</p>
+            <p style="margin-bottom: 0 !important;"></p>
+            </div>
+            <div class="white" id="box">
+              <a target="_blank"href="https://en.wikipedia.org/wiki/Vallabhbhai_Patel"> <img src="{% static '/fighters/sadarvallabhii.jpeg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+              <p style="margin-bottom: 0 !important;" id="name">Sardar Vallabhbhai Patel</p>
+              <p style="margin-bottom: 0 !important;"></p>
+              </div>
+              <div class="green" id="box">
+                <a target="_blank"href="https://en.wikipedia.org/wiki/Bhagat_Singh"><img src="{% static '/fighters/Bhagat-Singh.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+                <p style="margin-bottom: 0 !important;" id="name">Bhagat Singh </p>
+                <p style="margin-bottom: 0 !important;"></p>
+                </div>
+                <div class="green" id="box">
+                  <a target="_blank"href="https://en.wikipedia.org/wiki/Rani_of_Jhansi"> <img src="{% static '/fighters/Lakshmi-Bai.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+                  <p style="margin-bottom: 0 !important;" id="name">Rani Laxmi Bai</p>
+                  <p style="margin-bottom: 0 !important;"> </p>
+                  </div>
+        </div>
+        <div id="flex-container">
+            <div class="orange"id="box">            
+              <a target="_blank"href="https://en.wikipedia.org/wiki/Mangal_Pandey"> <img src="{% static '/fighters/mangal.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+                <p style="margin-bottom: 0 !important;" id="name">Mangal Pandey</p>
+                <p style="margin-bottom: 0 !important;"></p>
+            </div>
+            <div class="orange" id="box">
+              <a target="_blank"href="https://en.wikipedia.org/wiki/Ashfaqulla_Khan"><img src="{% static '/fighters/asafqulaa.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+            <p style="margin-bottom: 0 !important;" id="name">Ashfaqulla Khan</p>
+            <p style="margin-bottom: 0 !important;"></p>
+            </div>
+            <div class="white" id="box">
+              <a target="_blank"href="https://en.wikipedia.org/wiki/Kartar_Singh_Sarabha"> <img src="{% static '/fighters/kartar.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+              <p style="margin-bottom: 0 !important;" id="name">Kartar Singh Sarabha</p>
+              <p style="margin-bottom: 0 !important;"></p>
+              </div>
+              <div class="green" id="box">
+                <a target="_blank"href="https://en.wikipedia.org/wiki/Kanneganti_Hanumanthu"> <img src="{% static '/fighters/kanna.jpeg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+                <p style="margin-bottom: 0 !important;" id="name">Kanneganti Hanumanthu </p>
+                <p style="margin-bottom: 0 !important;"></p>
+                </div>
+                <div class="green" id="box">
+                  <a target="_blank"href="https://en.wikipedia.org/wiki/Chittaranjan_Das"><img src="{% static '/fighters/220px-Chittaranjan_Das_2.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+                  <p style="margin-bottom: 0 !important;" id="name">Chittaranjan Das</p>
+                  <p style="margin-bottom: 0 !important;">  </p>
+                  </div>
+        </div>
+        <div id="flex-container">
+          <div class="orange"id="box">            
+            <a target="_blank"href="https://en.wikipedia.org/wiki/Rabindranath_Tagore"><img src="{% static '/fighters/Rabindranath-Tagore.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+              <p style="margin-bottom: 0 !important;" id="name">Rabindranath Tagore</p>
+              <p style="margin-bottom: 0 !important;"></p>
+          </div>
+          <div class="orange" id="box">
+            <a target="_blank"href="https://en.wikipedia.org/wiki/Bal_Gangadhar_Tilak"><img src="{% static '/fighters/Bal-Gangadhar-Tilak.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+          <p style="margin-bottom: 0 !important;" id="name">Bal Gangadhar Tilak</p>
+          <p style="margin-bottom: 0 !important;"></p>
+          </div>
+          <div class="white" id="box">
+            <a target="_blank"href="https://en.wikipedia.org/wiki/Dr._Lal_Bhadur_Shastri"> <img src="{% static '/fighters/Lal_Bahadur_Shastri_(from_stamp).jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+            <p style="margin-bottom: 0 !important;" id="name">Dr. Lal Bhadur Shastri</p>
+            <p style="margin-bottom: 0 !important;"></p>
+            </div>
+            <div class="green" id="box">
+              <a target="_blank"href="https://en.wikipedia.org/wiki/Chandra_Shekhar_Azad"> <img src="{% static '/fighters/chandrashekarazad.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+              <p style="margin-bottom: 0 !important;" id="name">Chandra Shekhar Azad </p>
+              <p style="margin-bottom: 0 !important;"></p>
+              </div>
+              <div class="green" id="box">
+                <a target="_blank"href="https://en.wikipedia.org/wiki/Dadabhai_Naoroji"><img src="{% static '/fighters/dababhai.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+                <p style="margin-bottom: 0 !important;" id="name">Dadabhai Naoroji</p>
+                
+                </div>
+      </div>
+      <div id="flex-container">
+        <div class="orange"id="box">            
+          <a target="_blank"href="https://en.wikipedia.org/wiki/Tatya_Tope"> <img src="{% static '/fighters/Tantia_Tope_painting.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+            <p style="margin-bottom: 0 !important;" id="name">Tantia Tope</p>
+            <p style="margin-bottom: 0 !important;"></p>
+        </div>
+        <div class="orange" id="box">
+          <a target="_blank"href="https://en.wikipedia.org/wiki/Bipin_Chandra_Pal"><img src="{% static '/fighters/bipin.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+        <p style="margin-bottom: 0 !important;" id="name">Bipin Chandra Pal</p>
+        <p style="margin-bottom: 0 !important;"></p>
+        </div> 
+        <div class="white" id="box">
+          <a target="_blank"href="https://en.wikipedia.org/wiki/Lal_Lajpat_Rai"><img src="{% static '/fighters/Mahatma_Lala_Lajpat_Rai.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+          <p style="margin-bottom: 0 !important;" id="name">Lal Lajpat Rai</p>
+          <p style="margin-bottom: 0 !important;"></p>
+          </div>
+          <div class="green" id="box">
+            <a target="_blank"href="https://en.wikipedia.org/wiki/Nana_Saheb_Peshwa_II"> <img src="{% static '/fighters/Nana_Saheb_Peshwa_of_Bithoor.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+            <p style="margin-bottom: 0 !important;" id="name">Nana Saheb</p>
+            <p style="margin-bottom: 0 !important;"></p>
+            </div>
+            <div class="green" id="box">
+              <a target="_blank"href="https://en.wikipedia.org/wiki/Sukhdev_Thapar"> <img src="{% static '/fighters/Sukhdev-Thapar-Picture.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+              <p style="margin-bottom: 0 !important;" id="name">Sukhdev</p>
+              <p style="margin-bottom: 0 !important;">  </p>
+              </div>
+    </div>
+    <div id="flex-container">
+      <div class="orange"id="box">            
+        <a target="_blank"href="https://en.wikipedia.org/wiki/Kunwar_Singh"> <img src="{% static '/fighters/Kunwarsingh-213x300.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+          <p style="margin-bottom: 0 !important;" id="name">Kunwar Singh </p>
+          <p style="margin-bottom: 0 !important;"></p>
+      </div>
+      <div class="orange" id="box">
+        <a target="_blank"href="https://en.wikipedia.org/wiki/V.D_Savarka"><img src="{% static '/fighters/vd.jpeg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+      <p style="margin-bottom: 0 !important;" id="name">V.D Savarkar</p>
+      <p style="margin-bottom: 0 !important;"></p>
+      </div>
+      <div class="white" id="box">
+        <a target="_blank"href="https://en.wikipedia.org/wiki/Gaya_Prasad_Katiyar"><img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Gaya_Prasad_Katiyar.jpg" style="width:180px; height:200px; border-radius: 5%;"></a>
+        <p style="margin-bottom: 0 !important;" id="name">Gaya Prasad Katiyar</p>
+        <p style="margin-bottom: 0 !important;"></p>
+        </div>
+        <div class="green" id="box">
+          <a target="_blank"href="https://en.wikipedia.org/wiki/Begum_Hazrat_Maha"><img src="{% static '/fighters/Begum_hazrat_mahal.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+          <p style="margin-bottom: 0 !important;" id="name">Begum Hazrat Mahal </p>
+          <p style="margin-bottom: 0 !important;"></p>
+          </div>
+          <div class="green" id="box">
+            <a target="_blank"href="https://en.wikipedia.org/wiki/Kasturba_Gandhi"> <img src="{% static '/fighters/Kasturba.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+            <p style="margin-bottom: 0 !important;" id="name">Kasturba Gandhi</p>
+            <p style="margin-bottom: 0 !important;">  </p>
+            </div>
+  </div>
+  <div id="flex-container">
+    <div class="orange"id="box">            
+      <a target="_blank"href="https://en.wikipedia.org/wiki/Kamala_Nehru"><img src="{% static '/fighters/Kamala_Nehru_4cr.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+        <p style="margin-bottom: 0 !important;" id="name">Kamla Nehru</p>
+        <p style="margin-bottom: 0 !important;"></p>
+    </div>
+    <div class="orange" id="box">
+      <a target="_blank"href="https://en.wikipedia.org/wiki/Vijay_Laxmi_Pandit"><img src="{% static '/fighters/170px-Vijaya_Lakshmi_Pandit.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+    <p style="margin-bottom: 0 !important;" id="name">Vijay Laxmi Pandit</p>
+    <p style="margin-bottom: 0 !important;"></p>
+    </div>
+    <div class="white" id="box">
+      <a target="_blank"href="https://en.wikipedia.org/wiki/Sarojini_Naidu"><img src="{% static '/fighters/sarojni.jpeg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+      <p style="margin-bottom: 0 !important;" id="name">Sarojini Naidu</p>
+      <p style="margin-bottom: 0 !important;"></p>
+      </div>
+      <div class="green" id="box">
+        <a target="_blank"href="https://en.wikipedia.org/wiki/Aruna_Asaf_Ali"> <img src="{% static '/fighters/Aruna_Asaf_Ali.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+        <p style="margin-bottom: 0 !important;" id="name">Aruna Asaf Ali </p>
+        <p style="margin-bottom: 0 !important;"></p>
+        </div>
+        <div class="green" id="box">
+          <a target="_blank"href="https://en.wikipedia.org/wiki/Bhikaiji_Cama"> <img src="{% static '/fighters/Bhikaiji-Cama-e1637727185880.jpg' %}" style="width:180px; height:200px; border-radius: 5%;"></a>
+          <p style="margin-bottom: 0 !important;" id="name">Madam Bhikaji Cama</p>
+          <p style="margin-bottom: 0 !important;">  </p>
+          </div>
+        </div>
+      </center>
+<hr class="style-two">
+            <footer>
+              <div class="myfootercontainer footerContainer">
+                <div class="footer-nav flex flex-around flex-start flex-g-1">
+                  <div class="col flex flex-column flex-start flex-g-1">
+                    <span class="logo-holder">
+                      <img style="margin: 0; padding: 0;" src="{% static '/dist/gts.jpeg' %}" alt="">
+                    </span>
+                    <p class="site-decription">
+                      This Is A Competition Website And It Is Not Against Anyone.
+                    </p>
+                    <div class="social-medias flex flex-g-1">
+                      <a target="_blank" href="https://www.youtube.com/@gurukultheschool2186/featured" class="social-media flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                      </a>
+                      <a target="_blank" href="https://twitter.com/gurukulthescho1" class="social-media flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                      </a>
+                      <a target="_blank" href="https://www.facebook.com/gurukulNH9" class="social-media flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                      </a>
+                      <a target="_blank" href="https://www.gurukultheschool.com/" class="social-media flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5v39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9v39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7v-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1H257c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zm48 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z"/></svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col flex flex-column flex-g-1 flex-start">
+                    <h3 class="col-title">Info</h3>
+                    <nav class="col-list">
+                      <ul style="background-color: white; background-image: none;">
+                        <li><a href="https://www.gurukultheschool.com/">School Web</a></li>
+                        <li><a href="https://www.gurukultheschool.com/admission.php#reading">FAQ</a></li>
+                        <li><a href="https://www.gurukultheschool.com/school.php">School</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="col flex flex-column flex-g-1 flex-start"><h3 class="col-title">Credits</h3>
+                <nav class="col-list">
+                  <ul style="background-color: white; background-image: none;">
+                    <li><a href="{% static '/pics/yash.jpeg' %}">~Yash Varshney VII-C</a></li>
+                    <li><a href="{% static '/pics/tarang.jpeg' %}">~Tarang Katiyar</a></li>
+                  </ul>
+                </nav></div>
+                  
+                </div>
+                
+                <div class="copyright">© 2022 - All Rights Reserved <br><a style="color: black;" href="./copyright.html">Click Here for Citations</a></div> 
+              </div>
+            </footer>
+      </div>
+        
+        
+
+        <div id="Media" class="tabcontent">
+          <div class="mytext">
+            <h2 class="headings neon">Independence Infotainment</h2>
+          </div>
+          <div class="myquotecontainerdim"> 
+
+    
+            <div class="testimonial-quote group">
+                <img class="logoimg" src="{%static 'media/br.jpeg'%}">
+                <div class="quote-container">
+                    <blockquote>
+                        <p>So long as you do not achieve social liberty, whatever freedom is provided by the law is of no avail to you."</p>
+                    </blockquote>  
+                    <cite><span>BR Ambedkar</span><br>
+                      Former Minister<br>
+                      Government of India
+                    </cite>
+                </div>
+            </div>    
+            <br><br><br><br>
+            <div class="testimonial-quote group">
+                
+                <div class="quote-container">
+                    <blockquote>
+                        <p>Our country is grateful to Gandhiji, Bhagat Singh, Rajguru, Ramprasad Bismil, Rani Laxmi Bai, Subash Chandra Bose, and all other freedom fighters who shook the foundations of the British Empire. "</p>
+                    </blockquote>  
+                    <cite><span>Narendra Modi</span><br>
+                      Prime Minister<br>
+                      India
+
+                    </cite>
+                </div>
+                <img class="logoimg" src="{% static '/media/modiji.jpg' %}">
+            </div>  
+            
+        
+        </div>
+          <div class="mediaflexcontainer">
+            <div>
+              <div class="quotecontainer">
+                
+                <div class="quote-box">
+                  <div class="quote">
+                    <blockquote>
+                      <i class="fa-solid fa-quote-left"></i> Ours is not a drive for power, but purely a nonviolent fight for India's independence. <i class="fa-solid fa-quote-right"></i><br><br>
+                    </blockquote>
+                  </div>
+                  <div class="writername">
+                    Mohandas Karamchand Gandhi
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="margin-left: 25px;">
+              <div class="quotecontainer">
+                <div class="quote-box">
+                  <div class="quote">
+                    <blockquote>
+                      <i class="fa-solid fa-quote-left"></i> One individual may die for an idea, but that idea will, after his death, incarnate itself in a thousand lives. <i class="fa-solid fa-quote-right"></i>
+                    </blockquote>
+                  </div>
+                  <div class="writername">
+                    Subhas Chandra Bose
+                  </div>
+                </div>
+              </div>
+            </div> 
+            ">
+          </div>
+          <div id="gallery" class="container-fluid">  
+            <a target="_blank" href="{% static '/media/gandhi1.jpg' %}"> <img src="{% static '/media/gandhi1.jpg' %}" class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi2.png' %}"> <img src="{% static '/media/gandhi2.png' %}" class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi3.jpg' %}"> <img src="{% static '/media/gandhi3.jpg' %}" class="img-responsive bw"></a>  
+            <a target="_blank" href="{% static '/media/gandhi4.jpg' %}"> <img src="{% static '/media/gandhi4.jpg' %}" class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi5.jpg' %}>"> <img src="{% static '/media/gandhi5.jpg' %}" class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi6.jpg' %}>"> <img src="{% static '/media/gandhi6.jpg' %}" class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi7.jpg' %}>"> <img src="{% static '/media/gandhi7.jpg' %}" class="card img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi8.jpg' %}>"> <img src="{% static '/media/gandhi8.jpg' %}" class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi9.jpg' %}> "><img src="{% static '/media/gandhi9.jpg' %}" class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi10.jpg' %}>"> <img src="{% static '/media/gandhi10.jpg' %} "class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi11.png' %}>"> <img src="{% static '/media/gandhi11.png' %} "class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi12.jpg' %}>"> <img src="{% static '/media/gandhi12.jpg' %}" class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi13.jpg' %}>"> <img src="{% static '/media/gandhi13.jpg' %}" class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi14.jpg' %}>"> <img src="{% static '/media/gandhi14.jpg' %}" class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi15.jpg' %}>"> <img src="{% static '/media/gandhi15.jpg' %}" class="img-responsiv bwe"></a>
+          </div>
+          <div class="img-popup">            
+            <div class="close-btn">
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+          <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                </div>
+              </div>          
+            </div>
+          </div>          
+          <br><br><br><hr class="style-two">
+          <footer>
+            <div class="myfootercontainer footerContainer">
+              <div class="footer-nav flex flex-around flex-start flex-g-1">
+                <div class="col flex flex-column flex-start flex-g-1">
+                  <span class="logo-holder">
+                    <img style="margin: 0; padding: 0;" src="{% static '/dist/gts.jpe' %}" alt="">
+                  </span>
+                  <p class="site-decription">
+                    This Is A Competition Website And It Is Not Against Anyone.
+                  </p>
+                  <div class="social-medias flex flex-g-1">
+                    <a target="_blank" href="https://www.youtube.com/@gurukultheschool2186/featured" class="social-media flex">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/gurukulthescho1" class="social-media flex">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/gurukulNH9" class="social-media flex">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                    </a>
+                    <a target="_blank" href="https://www.gurukultheschool.com/" class="social-media flex">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5v39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9v39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7v-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1H257c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zm48 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z"/></svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="col flex flex-column flex-g-1 flex-start">
+                  <h3 class="col-title">Info</h3>
+                  <nav class="col-list">
+                    <ul style="background-color: white; background-image: none;">
+                      <li><a href="https://www.gurukultheschool.com/">School Web</a></li>
+                      <li><a href="https://www.gurukultheschool.com/admission.php#reading">FAQ</a></li>
+                      <li><a href="https://www.gurukultheschool.com/school.php">School</a></li>
+                    </ul>
+                  </nav> 
+                </div>
+                <div class="col flex flex-column flex-g-1 flex-start"><h3 class="col-title">Credits</h3>
+              <nav class="col-list">
+                <ul style="background-color: white; background-image: none;">
+                  <li><a href="{% static '/pics/yash.jpeg' %}">~Yash Varshney</a></li>
+                  <li><a href="{% static '/pics/tarang.jpeg' %}">~Tarang Katiyar </a></li>
+                </ul>
+              </nav>
+            </div>                
+              </div>
+              
+              <div class="copyright">© 2022 - All Rights Reserved <br><a style="color: black;" href="/copyright">Click Here for Citations</a></div> 
+            </div>
+          </footer>
+          
+          
+        </div>
+        
+      
+       
+        <div id="Home" class="tabcontent">
+          <div class="centercontainer">
+            <img src="{% static '/dist/BG.jpg' %}" alt=""  style="width:100%; height: 200px;">
+            <div class="centeredbox text-focus-in" style="font-family: 'Great Vibes'" id="head">Journey Towards Independence</div>
+          </div>
+          <div class="mytext">
+        <h2 class="headings neon">Journey Towards Independence - 1857 to 1947</h2>
+        
+        <p>The Indian independence movement was a series of historic events with the ultimate aim of ending <u>British rule in India </u>.<br> It lasted from <b>1857 to 1947</b>. The first nationalistic revolutionary movement for Indian independence emerged from<b> Bengal</b></p></div>
+      
+        <div class="timeline">
+            <section class="mycontainer left">
+              <div class="timelinecontent lefty animate-on-scroll">
+                <h2>The Revolt of 1857:</h2>
+                <p>The Indian Mutiny, also known as the Sepoy Mutiny, ignited the first spark of the revolution. It began in Meerut and later spread to Delhi, Agra, Kanpur, and Lucknow. It was quite widespread.</p>
+              </div>
+            </section>
+            <section class="mycontainer right">
+              <div class="timelinecontent righty animate-on-scroll">
+                <h2>Champaran Satyagraha of 1917:</h2>
+                <p>It was the first satyagraha inspired by Mahatma Gandhi. The farmers in the Champaran district of Bihar were being forced to grow indigo. Besides, they were barely paid anything for their produce. This led to a farmer's uprising.</p>
+              </div>
+            </section>
+            <section class="mycontainer left">
+              <div class="timelinecontent lefty animate-on-scroll">
+                <h2>The Non-Cooperation Movement of 1920:</h2>
+                <p>It was led by Mahatma Gandhi post the Jallianwala Bagh Massacre. The movement lasted 2 years from 1920 to 1922. It embodied the idea of ‘non-violence’ or “Ahimsa”. Where protestors refused to buy British goods and adopted local goods. Indeed, it was the most significant phase of the Indian Independence Movement.</p>
+              </div>
+            </section>
+            <section class="mycontainer right">
+              <div class="timelinecontent righty animate-on-scroll">
+                <h2>The Dandi March of 1930</h2>
+                <p>It is the most iconic act of non-violent civil disobedience. Gandhiji, along with a huge crowd walked from Sabarmati Ashram to Dandi beach as a means of non-violent protest against the repressive salt tax imposed by the British government.</p>
+              </div>
+            </section>
+            <section class="mycontainer left">
+              <div class="timelinecontent lefty animate-on-scroll">
+                <h2>Quit India Movement of 1942:</h2>
+                <p>The Bombay session of the All-India Congress Committee got this movement rolling on 8th August 1942, during World War II. The mission was as clear as water – an end to the British Rule of India.</p>
+              </div>
+            </section>
+            <section class="mycontainer  right">
+              <div class="timelinecontent righty animate-on-scroll">
+                <h2>Indian Independence League 1947:</h2>
+                <p>The Indian Independence League extended to people living outside India. It sought their approval of revoking the British colonial rule over India. The league was located in various parts of Southeast Asia.</p>
+              </div>
+            </section>
+            <section class="mycontainer left">
+                <div class="timelinecontent lefty animate-on-scroll">
+                  <h2>Indian Independence Act of 1947:</h2>
+                  <p>The Indian Independence Act was an act of the Parliament of the United Kingdom. The act partitioned British India into two new independent dominions of India and Pakistan. It received the assent of the royal family on 18th July 1947. In effect, India came into existence on August 15th and Pakistan on 14th August in the year 1947.</p>
+                </div>
+            </section>
+          </div>
+
+          <center class="yellowbox">
+            <br><br><br><br>
+          <div id="boxcontainer">         
+          <section class="mybox"> 
+            <img class="greenboximg" src="{% static '/home/money.jpg' %}" alt="">
+            <p>The British Raj was the period of British rule on the Indian subcontinent between 1858 and 1947. The system of governance was instituted in 1858 when the rule of the East India Company was transferred to The Crown in the person of Queen Victoria.
+            </p>
+            <button  class="button"><a target="_blank" href="https://en.wikipedia.org/wiki/British_Raj/">Know More → </a></button>
+          </section>
+          <section class="mybox"> 
+            <img class="greenboximg" src="{% static '/home/1.jpg' %}" alt="">
+            <p>Gandhi's system of Satyagraha was based on nonviolence, non co-operation, truth and honesty. Gandhi used non violence in India's freedom struggle as main weapon and India became independent from British rule.</p>
+            <button class="button button2"><a target="_blank" href="https://en.wikipedia.org/wiki/Non-cooperation_movement#:~:text=Gandhi's%20planning%20of%20the%20non,British%20industries%20and%20educational%20institutions">Know More →</a> </button>
+          </section>
+          </div>
+          <div id="boxcontainer">         
+            <section class="mybox"> 
+              <img class="greenboximg" src="{% static '/home/2.jpg' %}" alt="">
+              <p>On 12 March 1930, Gandhi and 78 satyagrahis, among whom were men belonging to almost every region of India, set out on foot for the coastal village of Dandi, Gujarat, 385 km from their starting point at Sabarmati Ashram.</p>
+              <button class="button button3"><a target="_blank" href="https://en.wikipedia.org/wiki/Mahatma_Gandhi">Know More →</a></button>
+            </section>
+            <section class="mybox"> 
+              <img class="greenboximg" src="{% static '/home/gandhi.jpeg' %}" alt="">
+              <p>He led the Salt March in 1930 and in 1942, he launched Quit India Movement during the freedom struggle which carves the independent nations of India out of the former Mughal Empire, midnight on August 15, 1947.</p>
+              <button class="button button4"><a target="_blank" href="https://en.wikipedia.org/wiki/Mahatma_Gandhi">Know More →</a></button>
+            </section>
+            </div>
+            <br><br><br>
+          </center>
+            <div class="gandhiji"><br>
+              <h2 class="headings neon" style="margin: 0px 50px">What Gandhi Ji Taught Us?</h2> </p><br>
+              <div class="gandhipoints">
+                
+                <div class="focus-animation">
+                  
+                  <p class="headingmy"><b><u> Non Violence </u></b></p> <br>
+                  <p> "Non-violence is the greatest force at the disposal of mankind.” These are the words of the man himself and this tells us why we should follow the path of non-violence.</p>
+                </div>
+                <div class="focus-animation"> 
+                  <p class="headingmy"><b><u>  Truth And Honesty</u> </b></p> <br>
+                   <p>Gandhiji showed us that truth alone triumphs and this is evident from a lot of his real-life stories. He led a life of truth, seeking the truth. Truth and honesty is a lesson that people should learn from Mahatma Gandhi’s life.</p>
+                </div>
+                <section>
+                <div class="focus-animation">
+                  <p class="headingmy"><b><u> Forgiveness</u> </b> </p><br>
+                  <p>Forgiveness is a virtue and the very famous story of Mahatma Gandhi, showing his right cheek when someone slapped him on his left cheek, stands proof of how forgiving Gandhiji was. He said that “an eye for an eye only ends up making the whole world blind.” Such a simple yet powerful thought</p><br>
+                </div>
+              </section>
+              </div>
+              <div class="gandhipoints second">
+                <section>
+                <div class="focus-animation">
+                  
+                  <p class="headingmy line2"><b><u> Perseverance</u></b></p> <br>
+                   <p>A river cuts through the mountains, not because of its strength, but because of its perseverance. Quite often, we give up when things get tough. Mahatma Gandhi was a living example of how perseverance can lead us towards winning. He never gave up on his dream of a free India.</p><br>
+                </div>
+                </section>
+                <section>
+                <div class="focus-animation">
+                  
+                  <p class="headingmy line2"><b><u>Mindfulness</b></u></p> <br>
+                  <p>Gandhiji emphasized on the importance of mental well-being and mindfulness. Mindfulness is a process of being aware and non-judgmental. It was his mindfulness that helped him forgive and made him pursue his goals. He said that “You must be the change that you wish to see in the world.”</p> <br>
+                </div>
+              </section>
+              </div>
+            </div>
+            <br><br><hr class="style-two">
+            <footer>
+              <div class="myfootercontainer footerContainer">
+                <div class="footer-nav flex flex-around flex-start flex-g-1">
+                  <div class="col flex flex-column flex-start flex-g-1">
+                    <span class="logo-holder">
+                      <img style="margin: 0; padding: 0;" src="{% static '/dist/gts.jpe' %}" alt="">
+                    </span>
+                    <p class="site-decription">
+                      This Is A Competition Website And It Is Not Against Anyone.
+                    </p>
+                    <div class="social-medias flex flex-g-1">
+                      <a target="_blank" href="https://www.youtube.com/@gurukultheschool2186/featured" class="social-media flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                      </a>
+                      <a target="_blank" href="https://twitter.com/gurukulthescho1" class="social-media flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                      </a>
+                      <a target="_blank" href="https://www.facebook.com/gurukulNH9" class="social-media flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                      </a>
+                      <a target="_blank" href="https://www.gurukultheschool.com/" class="social-media flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5v39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9v39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7v-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1H257c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zm48 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z"/></svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col flex flex-column flex-g-1 flex-start">
+                    <h3 class="col-title">Info</h3>
+                    <nav class="col-list">
+                      <ul style="background-color: white; background-image: none;">
+                        <li><a href="https://www.gurukultheschool.com/">School Web</a></li>
+                        <li><a href="https://www.gurukultheschool.com/admission.php#reading">FAQ</a></li>
+                        <li><a href="https://www.gurukultheschool.com/school.php">School</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="col flex flex-column flex-g-1 flex-start"><h3 class="col-title">Credits</h3>
+                <nav class="col-list">
+                  <ul style="background-color: white; background-image: none;">
+                    <li><a href="{% static '/pics/yash.jpeg' %}">~Yash Varshney VII-C</a></li>
+                    <li><a href="{% static '/pics/tarang.jpeg' %}">~Tarang Katiyar</a></li>
+                  </ul>
+                </nav></div>
+                  
+                </div>
+                
+                <div class="copyright">© 2022 - All Rights Reserved <br><a style="color: black;" href="./copyright">Click Here for Citations</a></div> 
+              </div>
+            </footer>
+            
+            
+            
+          </div>
+        </div>
+      </div>
+      <br><br><br><br>
+          
+    </div>
+      </div>
+    </div>
+    </div>
+    <script src="{% static '/script/main.js' %}"></script>
+    <script src="{% static '/script/scroll.js' %}"></script>
+    </body>
+</html> 
