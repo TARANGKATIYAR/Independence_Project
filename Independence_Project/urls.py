@@ -20,7 +20,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('backendsite.urls'))
 ]
-
+handler404 = "backendsite.views.page_not_found_view"
 admin.site.site_header = "Yash's Website Administration"
 admin.site.site_title = "Yash's Website Portal"
 admin.site.index_title = "Welcome to Administration of the Website"
