@@ -1152,6 +1152,10 @@ h1.neon:hover {
    display: none;
   }
 
+  .heartbeat {
+    display: none !important;
+  }
+
   ul.sidenav {
       display: none;
   }
