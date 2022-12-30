@@ -9,6 +9,7 @@
         <script src="https://kit.fontawesome.com/7414e22221.js"></script>
         <link rel="stylesheet" href="{% static '/style/style.css' %}">
         <link rel="stylesheet" href="{% static '/style/contact.css' %}">
+        <link rel="stylesheet" href="{% static '/style/Stickynotes.css' %}">
         <link href='https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap' rel="stylesheet">
         <link rel="shortcut icon" type="x-1con" href="{% static '/dist/logo.png' %}">        
         <title>Journey To Independence</title>
@@ -28,7 +29,56 @@
             <button class="tablinks" onclick="openTab(event, 'Fighters')"><span><i class="fa-solid fa-user font-awesome-i"> </i> </span>Fighters</button>
             <button class="tablinks" onclick="openTab(event, 'Information')"><span><i class="fa-solid fa-circle-info font-awesome-i"></i> </span>Facts</button>
             <button class="tablinks" onclick="openTab(event, 'Contact')"><span><i class="fa-solid fa-phone font-awesome-i"></i> </span>Contact</button>
+            <button class="tablinks" onclick="openTab(event, 'Stickynotes')"><span><i class="fa-regular fa-note-sticky"></i> </span>Padlet</button>
         </div>
+        <div id="Stickynotes" class="tabcontent">
+          <center><h2 style="margin: 20px;" class="headings neon">Padlet Activity</h2></center>
+          <center>
+            <button class="btn btn-warning addbtn"  id="myBtn"><i class="fa-solid fa-plus"></i></button>
+          </center>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <form method="get" action="/padlet">
+                  <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Name</span>
+                    <input name="name" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+                  <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Add Subject</span>
+                    <input name="subject" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+                  <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">Add Message</span>
+                    <textarea name="mymessage" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>         
+            <div style="margin: 20px;">
+           
+              <p><h3 style="margin:0px; padding:0px;">Is India Really Independent?</h3>
+             <h4 style="margin:0px; padding:0px;">Even after 75 years aren't we ready</h4>
+             <h5 style="margin:0px; padding:0px;"> What stops our steps toward the spirit of independence?</h5></p>
+            </div>
+          
+          <!-- Trigger/Open The Modal -->
+          <div style="background-color: #FBC252;">
+            
+            <div class="flexbox">
+              {% for message in padlet_list %}
+              <div class="mycard">
+                <h3>{{message.subject}}</h3>
+                <p>{{message.message}}</p>
+                <h6>{{message.name}}</h6>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div> 
         <div id="Contact" class="tabcontent">
           <h2 style="margin: 20px;" class="headings neon">Review Our Webpage</h2>
           <section id="contact">
@@ -813,5 +863,6 @@
     </div>
     <script src="{% static '/script/main.js' %}"></script>
     <script src="{% static '/script/scroll.js' %}"></script>
+    <script src="{% static '/script/modals.js' %}"></script>
     </body>
 </html> 

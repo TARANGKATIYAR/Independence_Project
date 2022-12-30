@@ -1,9 +1,10 @@
 from django.shortcuts import render, HttpResponse
-from backendsite.models import Contact, Messages
+from backendsite.models import Contact, Messages, Padlet
 from datetime import datetime
 # Create your views here.
 def index(request): 
-    return render(request, "index.html")
+    context = {'padlet_list': Padlet.objects.order_by('id')}
+    return render(request, "index.html", context)
 
 def copyright(request):
     return render(request, "copyright.html")
@@ -35,6 +36,21 @@ def comment(request):
 
 
     return render(request, 'comment.html', context)
+
+def padlet(request):
+    
+
+    if request.method == "GET":
+        name = request.GET.get('name', 'None')
+        subject = request.GET.get('subject', 'None')
+        mycomment = request.GET.get('mymessage', 'None')
+        if name == 'None' and subject == 'None' and mycomment == 'None':
+            pass
+        else: 
+            padlet_instance = Padlet.objects.create(name=name, subject=subject, message=mycomment)
+            padlet_instance.save()
+
+    return render(request, 'padlet.html')
 
 def page_not_found_view(request, exception): 
     return render(request, '404.html', status=404)

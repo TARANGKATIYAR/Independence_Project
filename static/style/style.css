@@ -82,14 +82,14 @@ div.content {
 
 .tab button {
   background-color: inherit;
-  width: 20%;
+  width: 16.6666667%;
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .tab button:hover {
