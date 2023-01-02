@@ -6,10 +6,11 @@
 .mycard {
   width: 33.33% !important;
   margin: 25px;
-  border-radius: 10%;
+  /* border-radius: 10%; */
   background-color: #2C74B3;
   color: white;
-  padding: 20px;
+  /* padding: 20px; */
+  border: solid 5px #0A2647;
 }
 
 /* The Modal (background) */

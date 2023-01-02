@@ -29,7 +29,7 @@
             <button class="tablinks" onclick="openTab(event, 'Fighters')"><span><i class="fa-solid fa-user font-awesome-i"> </i> </span>Fighters</button>
             <button class="tablinks" onclick="openTab(event, 'Information')"><span><i class="fa-solid fa-circle-info font-awesome-i"></i> </span>Facts</button>
             <button class="tablinks" onclick="openTab(event, 'Contact')"><span><i class="fa-solid fa-phone font-awesome-i"></i> </span>Contact</button>
-            <button class="tablinks" onclick="openTab(event, 'Stickynotes')"><span><i class="fa-regular fa-note-sticky"></i> </span>Padlet</button>
+            <button class="tablinks" onclick="openTab(event, 'Stickynotes')"><span><i class="fa-regular fa-note-sticky font-awesome-i"></i> </span>Padlet</button>
         </div>
         <div id="Stickynotes" class="tabcontent">
           <center><h2 style="margin: 20px;" class="headings neon">Padlet Activity</h2></center>
@@ -71,13 +71,64 @@
             <div class="flexbox">
               {% for message in padlet_list %}
               <div class="mycard">
-                <h3>{{message.subject}}</h3>
-                <p>{{message.message}}</p>
-                <h6>{{message.name}}</h6>
+                <div style="padding:25px;">
+                  <h3>{{message.subject}}</h3>
+                  <p>{{message.message}}</p>
+                  <h6>{{message.name}}</h6>
+                </div>
               </div>
               {% endfor %}
             </div>
-          </div>
+          </div><br><br><br>
+          <hr class="style-two">
+              <footer>
+                <div class="myfootercontainer footerContainer">
+                  <div class="footer-nav flex flex-around flex-start flex-g-1">
+                    <div class="col flex flex-column flex-start flex-g-1">
+                      <span class="logo-holder">
+                        <img style="margin: 0; padding: 0;" src="{% static '/dist/gts.jpeg' %}" alt="">
+                      </span>
+                      <p class="site-decription">
+                        This Is A Competition Website And It Is Not Against Anyone.
+                      </p>
+                      <div class="social-medias flex flex-g-1">
+                        <a target="_blank" href="https://www.youtube.com/@gurukultheschool2186/featured" class="social-media flex">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                        </a>
+                        <a target="_blank" href="https://twitter.com/gurukulthescho1" class="social-media flex">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+                        </a>
+                        <a target="_blank" href="https://www.facebook.com/gurukulNH9" class="social-media flex">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                        </a>
+                        <a target="_blank" href="https://www.gurukultheschool.com/" class="social-media flex">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M57.7 193l9.4 16.4c8.3 14.5 21.9 25.2 38 29.8L163 255.7c17.2 4.9 29 20.6 29 38.5v39.9c0 11 6.2 21 16 25.9s16 14.9 16 25.9v39c0 15.6 14.9 26.9 29.9 22.6c16.1-4.6 28.6-17.5 32.7-33.8l2.8-11.2c4.2-16.9 15.2-31.4 30.3-40l8.1-4.6c15-8.5 24.2-24.5 24.2-41.7v-8.3c0-12.7-5.1-24.9-14.1-33.9l-3.9-3.9c-9-9-21.2-14.1-33.9-14.1H257c-11.1 0-22.1-2.9-31.8-8.4l-34.5-19.7c-4.3-2.5-7.6-6.5-9.2-11.2c-3.2-9.6 1.1-20 10.2-24.5l5.9-3c6.6-3.3 14.3-3.9 21.3-1.5l23.2 7.7c8.2 2.7 17.2-.4 21.9-7.5c4.7-7 4.2-16.3-1.2-22.8l-13.6-16.3c-10-12-9.9-29.5 .3-41.3l15.7-18.3c8.8-10.3 10.2-25 3.5-36.7l-2.4-4.2c-3.5-.2-6.9-.3-10.4-.3C163.1 48 84.4 108.9 57.7 193zM464 256c0-36.8-9.6-71.4-26.4-101.5L412 164.8c-15.7 6.3-23.8 23.8-18.5 39.8l16.9 50.7c3.5 10.4 12 18.3 22.6 20.9l29.1 7.3c1.2-9 1.8-18.2 1.8-27.5zm48 0c0 141.4-114.6 256-256 256S0 397.4 0 256S114.6 0 256 0S512 114.6 512 256z"/></svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col flex flex-column flex-g-1 flex-start">
+                      <h3 class="col-title">Info</h3>
+                      <nav class="col-list">
+                        <ul style="background-color: white; background-image: none;">
+                          <li><a href="https://www.gurukultheschool.com/">School Web</a></li>
+                          <li><a href="https://www.gurukultheschool.com/admission.php#reading">FAQ</a></li>
+                          <li><a href="https://www.gurukultheschool.com/school.php">School</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div class="col flex flex-column flex-g-1 flex-start"><h3 class="col-title">Credits</h3>
+                  <nav class="col-list">
+                    <ul style="background-color: white; background-image: none;">
+                      <li><a href="{% static '/pics/yash.jpeg' %}">~Yash Varshney VII-C</a></li>
+                      <li><a href="{% static '/pics/tarang.jpeg' %}">~Tarang Katiyar VII-C</a></li>
+                    </ul>
+                  </nav></div>
+                    
+                  </div>
+                  
+                  <div class="copyright">© 2022 - All Rights Reserved <br><a style="color: black;" href="/copyright">Click Here for Citations</a></div> 
+                </div>
+              </footer>
         </div> 
         <div id="Contact" class="tabcontent">
           <h2 style="margin: 20px;" class="headings neon">Review Our Webpage</h2>
@@ -85,19 +136,19 @@
             
               <form method="get" action="/sent">
                 <div class="form-group row">
-                  <label for="email" class="col-sm-2 col-form-label">Name</label>
+                  <label class="col-sm-2 col-form-label">Name</label>
                   <div class="col-sm-10">
                     <input   style="color: black;" type="text" name="name" class="form-control" id="inputPassword" placeholder="Name">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label">Email</label>
+                  <label class="col-sm-2 col-form-label">Email</label>
                   <div class="col-sm-10">
                     <input   style="color: black;"type="email" name="email" class="form-control" id="inputPassword" placeholder="Email">
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label">Your Message</label>
+                  <label class="col-sm-2 col-form-label">Your Message</label>
                   <div class="col-sm-10">
                     <textarea  style="-color: black;" name="message" class="form-control" id="exampleFormControlTextarea1" cols="30" rows="10"></textarea>
                   </div>
@@ -685,7 +736,7 @@
             <div class="centeredbox text-focus-in" style="font-family: 'Great Vibes'" id="head">Journey Towards Independence</div>
           </div>
           <div class="mytext">
-        <h2 class="headings neon">Journey Towards Independence - 1857 to 1947 <a target="_blank" href="/comment" style="float: right; margin-right: 20px;" class="btn btn-secondary">Comments</a></h2>
+        <h2 class="headings neon">Journey Towards Independence - 1857 to 1947 <a href="/comment" style="float: right; margin-right: 20px;" class="btn btn-secondary">Comments</a></h2>
         
         <p>The Indian independence movement was a series of historic events with the ultimate aim of ending <u>British rule in India </u>.<br> It lasted from <b>1857 to 1947</b>. The first nationalistic revolutionary movement for Indian independence emerged from<b> Bengal</b></p></div>
       
