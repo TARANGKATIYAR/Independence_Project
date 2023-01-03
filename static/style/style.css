@@ -228,9 +228,9 @@ h1 {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid white;
+  border: medium solid #538162;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent #538162;
 }
 
 .right::before {
@@ -241,9 +241,9 @@ h1 {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid white;
+  border: medium solid #538162;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent #538162 transparent transparent;
 }
 
 .right::after {
@@ -291,10 +291,7 @@ h1 {
   }
   
   .mycontainer::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0px;
-  border-color: transparent white transparent transparent;
+  display: none;
   }
 
   .left::after, .right::after {
@@ -1006,7 +1003,6 @@ text-decoration: underline
   border: 0;
   margin: 0;
   padding: 0;
-
   background: none;
   color: gray;
   font-family: Georgia, serif;
@@ -1146,10 +1142,22 @@ h1.neon:hover {
   width: 960px; margin: 0 auto; padding-top: 80px; padding-bottom: 80px;
 }
 
+#rightquote{
+  margin-left: 25px;
+}
+
 @media screen and (max-width: 800px) {
   .font-awesome-i {
    font-size: 0;
    display: none;
+  }
+
+  #rightquote{
+    margin-left: 0px;
+  }
+
+  #removalimg {
+    display: none;
   }
 
   .heartbeat {
@@ -1168,6 +1176,7 @@ h1.neon:hover {
   .tab button {
       font-size: 13px;
   }
+
   .centercontainer {
       font-size: 40px;
   }
@@ -1216,6 +1225,9 @@ h1.neon:hover {
   }
   #flex-container {
       display: block;
+  }
+  .testimonial-quote .quote-container {
+      padding: 10px;
   }
 }
 

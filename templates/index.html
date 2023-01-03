@@ -9,7 +9,7 @@
         <script src="https://kit.fontawesome.com/7414e22221.js"></script>
         <link rel="stylesheet" href="{% static '/style/style.css' %}">
         <link rel="stylesheet" href="{% static '/style/contact.css' %}">
-        <link rel="stylesheet" href="{% static '/style/Stickynotes.css' %}">
+        <link rel="stylesheet" href="{% static '/style/stickynotes.css' %}">
         <link href='https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap' rel="stylesheet">
         <link rel="shortcut icon" type="x-1con" href="{% static '/dist/logo.png' %}">        
         <title>Journey To Independence</title>
@@ -583,7 +583,7 @@
 
     
             <div class="testimonial-quote group">
-                <img class="logoimg" src="{%static 'media/br.jpeg'%}">
+                <img class="logoimg" id="removalimg" src="{%static 'media/br.jpeg'%}">
                 <div class="quote-container">
                     <blockquote>
                         <p>So long as you do not achieve social liberty, whatever freedom is provided by the law is of no avail to you."</p>
@@ -607,7 +607,7 @@
 
                     </cite>
                 </div>
-                <img class="logoimg" src="{% static '/media/modiji.jpg' %}">
+                <img id="removalimg" class="logoimg" src="{% static '/media/modiji.jpg' %}">
             </div>  
             
         
@@ -628,7 +628,7 @@
                 </div>
               </div>
             </div>
-            <div style="margin-left: 25px;">
+            <div id="rightquote">
               <div class="quotecontainer">
                 <div class="quote-box">
                   <div class="quote">
@@ -642,24 +642,24 @@
                 </div>
               </div>
             </div> 
-            ">
+            
           </div>
           <div id="gallery" class="container-fluid">  
             <a target="_blank" href="{% static '/media/gandhi1.jpg' %}"> <img src="{% static '/media/gandhi1.jpg' %}" class="img-responsive bw"></a>
             <a target="_blank" href="{% static '/media/gandhi2.png' %}"> <img src="{% static '/media/gandhi2.png' %}" class="img-responsive bw"></a>
             <a target="_blank" href="{% static '/media/gandhi3.jpg' %}"> <img src="{% static '/media/gandhi3.jpg' %}" class="img-responsive bw"></a>  
             <a target="_blank" href="{% static '/media/gandhi4.jpg' %}"> <img src="{% static '/media/gandhi4.jpg' %}" class="img-responsive bw"></a>
-            <a target="_blank" href="{% static '/media/gandhi5.jpg' %}>"> <img src="{% static '/media/gandhi5.jpg' %}" class="img-responsive bw"></a>
-            <a target="_blank" href="{% static '/media/gandhi6.jpg' %}>"> <img src="{% static '/media/gandhi6.jpg' %}" class="img-responsive bw"></a>
-            <a target="_blank" href="{% static '/media/gandhi7.jpg' %}>"> <img src="{% static '/media/gandhi7.jpg' %}" class="card img-responsive bw"></a>
-            <a target="_blank" href="{% static '/media/gandhi8.jpg' %}>"> <img src="{% static '/media/gandhi8.jpg' %}" class="img-responsive bw"></a>
-            <a target="_blank" href="{% static '/media/gandhi9.jpg' %}> "><img src="{% static '/media/gandhi9.jpg' %}" class="img-responsive bw"></a>
-            <a target="_blank" href="{% static '/media/gandhi10.jpg' %}>"> <img src="{% static '/media/gandhi10.jpg' %} "class="img-responsive bw"></a>
-            <a target="_blank" href="{% static '/media/gandhi11.png' %}>"> <img src="{% static '/media/gandhi11.png' %} "class="img-responsive bw"></a>
-            <a target="_blank" href="{% static '/media/gandhi12.jpg' %}>"> <img src="{% static '/media/gandhi12.jpg' %}" class="img-responsive bw"></a>
-            <a target="_blank" href="{% static '/media/gandhi13.jpg' %}>"> <img src="{% static '/media/gandhi13.jpg' %}" class="img-responsive bw"></a>
-            <a target="_blank" href="{% static '/media/gandhi14.jpg' %}>"> <img src="{% static '/media/gandhi14.jpg' %}" class="img-responsive bw"></a>
-            <a target="_blank" href="{% static '/media/gandhi15.jpg' %}>"> <img src="{% static '/media/gandhi15.jpg' %}" class="img-responsiv bwe"></a>
+            <a target="_blank" href="{% static '/media/gandhi5.jpg' %}"> <img src="{% static '/media/gandhi5.jpg' %}" class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi6.jpg' %}"> <img src="{% static '/media/gandhi6.jpg' %}" class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi7.jpg' %}"> <img src="{% static '/media/gandhi7.jpg' %}" class="card img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi8.jpg' %}"> <img src="{% static '/media/gandhi8.jpg' %}" class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi9.jpg' %} "><img src="{% static '/media/gandhi9.jpg' %}" class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi10.jpg' %}"> <img src="{% static '/media/gandhi10.jpg' %} "class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi11.png' %}"> <img src="{% static '/media/gandhi11.png' %} "class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi12.jpg' %}"> <img src="{% static '/media/gandhi12.jpg' %}" class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi13.jpg' %}"> <img src="{% static '/media/gandhi13.jpg' %}" class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi14.jpg' %}"> <img src="{% static '/media/gandhi14.jpg' %}" class="img-responsive bw"></a>
+            <a target="_blank" href="{% static '/media/gandhi15.jpg' %}"> <img src="{% static '/media/gandhi15.jpg' %}" class="img-responsiv bwe"></a>
           </div>
           <div class="img-popup">            
             <div class="close-btn">

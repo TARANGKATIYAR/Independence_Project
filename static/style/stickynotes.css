@@ -3,17 +3,16 @@
   overflow: hidden;
 }
 
+
+
 .mycard {
-  width: 33.33% !important;
+  width: 33.33%;
   margin: 25px;
-  /* border-radius: 10%; */
   background-color: #2C74B3;
   color: white;
-  /* padding: 20px; */
   border: solid 5px #0A2647;
 }
 
-/* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -63,4 +62,14 @@
   padding: 20px 25px;
   border: 3px solid #000;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .flexbox {
+    display: block;
+  }
+  .mycard {
+    width: 90%;
+    margin-left: 25px;
+  }
 }
