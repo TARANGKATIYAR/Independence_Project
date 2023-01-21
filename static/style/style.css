@@ -1343,3 +1343,55 @@ h1.neon:hover {
 form {
   margin: 50px;
 }
+
+/* Suiiiiii */
+#hamburger { 
+  display: none;
+}
+@media screen and (max-width: 10000px) {
+  #link1  {
+    display: block;
+  }
+  #link2  {
+    display: block;
+  }
+  #link3  {
+    display: block;
+  }
+  #link4  {
+    display: block;
+  }
+  #link5  {
+    display: block;
+  }
+  #link6  {
+    display: block;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .tab button {
+    width: 100%;
+  }
+  #link1  {
+    display: none;
+  }
+  #link2  {
+    display: none;
+  }
+  #link3  {
+    display: none;
+  }
+  #link4  {
+    display: none;
+  }
+  #link5  {
+    display: none;
+  }
+  #link6  {
+    display: none;
+  }
+
+  #hamburger { 
+    display: block;
+  }
+}

@@ -22,12 +22,13 @@
     </ul>
     <div class="content">      
         <div class="tab">
-            <button class="tablinks myHome" onclick="openTab(event, 'Home')"><span><i class="fa-solid fa-house font-awesome-i"> </i> </span>Home</button>
-            <button class="tablinks" onclick="openTab(event, 'Media')"><span><i class="fa-solid fa-image font-awesome-i"> </i> </span>Media</button>
-            <button class="tablinks" onclick="openTab(event, 'Fighters')"><span><i class="fa-solid fa-user font-awesome-i"> </i> </span>Fighters</button>
-            <button class="tablinks" onclick="openTab(event, 'Information')"><span><i class="fa-solid fa-circle-info font-awesome-i"></i> </span>Facts</button>
-            <button class="tablinks" onclick="openTab(event, 'Contact')"><span><i class="fa-solid fa-phone font-awesome-i"></i> </span>Contact</button>
-            <button class="tablinks" onclick="openTab(event, 'Stickynotes')"><span><i class="fa-regular fa-note-sticky font-awesome-i"></i> </span>Padlet</button>
+            <button style="text-align: left !important;" onclick="hamburger()" id="hamburger"><i class="fa-solid fa-bars"></i></button>
+            <div id="link1"><button class="tablinks myHome" onclick="openTab(event, 'Home')"><span><i class="fa-solid fa-house font-awesome-i"> </i> </span>Home</button></div>
+            <div id="link2"><button class="tablinks" onclick="openTab(event, 'Media')"><span><i class="fa-solid fa-image font-awesome-i"> </i> </span>Media</button></div>
+            <div id="link3"><button class="tablinks" onclick="openTab(event, 'Fighters')"><span><i class="fa-solid fa-user font-awesome-i"> </i> </span>Fighters</button></div>
+            <div id="link4"><button class="tablinks" onclick="openTab(event, 'Information')"><span><i class="fa-solid fa-circle-info font-awesome-i"></i> </span>Facts</button></div>
+            <div id="link5"><button class="tablinks" onclick="openTab(event, 'Contact')"><span><i class="fa-solid fa-phone font-awesome-i"></i> </span>Contact</button></div>
+            <div id="link6"><button class="tablinks" onclick="openTab(event, 'Stickynotes')"><span><i class="fa-regular fa-note-sticky font-awesome-i"></i> </span>Padlet</button></div>
         </div>
         <div id="Stickynotes" class="tabcontent">
           <center><h2 style="margin: 20px;" class="headings neon">Padlet Activity</h2></center>
@@ -920,5 +921,55 @@
     <script src="{% static '/script/scroll.js' %}"></script>
     <script src="{% static '/script/modals.js' %}"></script>
     <script src="{% static '/script/notchup.js' %}"></script>
+    <script>
+      function hamburger() {
+        
+        var element = document.getElementById("link1");
+        if (element.style.display === "block") {
+          element.style.display = "none";
+        } else {
+          element.style.display = "block";
+        }
+
+        var element = document.getElementById("link2");
+        if (element.style.display === "block") {
+          element.style.display = "none";
+        } else {
+          element.style.display = "block";
+        }
+
+        var element = document.getElementById("link3");
+        if (element.style.display === "block") {
+          element.style.display = "none";
+        } else {
+          element.style.display = "block";
+        }
+        
+
+        var element = document.getElementById("link4");
+        if (element.style.display === "block") {
+          element.style.display = "none";
+        } else {
+          element.style.display = "block";
+        }
+        
+
+        var element = document.getElementById("link5");
+        if (element.style.display === "block") {
+          element.style.display = "none";
+        } else {
+          element.style.display = "block";
+        }
+        
+
+        var element = document.getElementById("link6");
+        if (element.style.display === "block") {
+          element.style.display = "none";
+        } else {
+          element.style.display = "block";
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     </body>
 </html> 
