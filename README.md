@@ -24,7 +24,7 @@ After this, go to http://127.0.0.1:8000 or http://localhost:8000 for opening the
 After this, the website is in front of you!!
 
 ## Our project
-[Click here](https://drive.google.com/file/d/1rxZpJTGPRugg7GWWZxcaax5_TtouAlK7/view?usp=sharing) for the presentation of our project!
+[Click here](https://drive.google.com/file/d/1iOpOGkDVza1Sc5vemcGA65pQ4-p0px9y/view?usp=sharing) for the presentation of our project!
 
 ## Usage
 
