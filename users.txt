@@ -1,0 +1,7 @@
+testuser1 - Contact Model
+testuser2 - Messages
+testuser3  - Padlet
+testuser4 - Users
+testuser5 - Logs
+
+superuser - supremeuser, sample
